@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/mainBody/firstSection.css" />
     <link rel="stylesheet" href="./styles/mainBody/secondSection.css" />
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
   <body>
     <section class="header-section">
@@ -23,7 +28,7 @@
         <div class="headerSection">
           <div id="myNav" class="nav-menu">
             <div class="close-btn" onclick="closeNav()">
-              <a href="javascript:void(0)"><i class='bx bx-x'></i></a>
+              <a href="javascript:void(0)"><i class="bx bx-x"></i></a>
             </div>
 
             <nav class="dropdown-content">
@@ -57,8 +62,18 @@
       <section class="section-one">
         <div class="purpleLens-container">
           <div class="purpleLens-text">
-            <p>Igniting a Revolution in <span>HR Innovation</span></p>
-            <div class="line"></div>
+            <p
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+            >
+              Igniting a Revolution in <span>HR Innovation</span>
+            </p>
+            <div data-aos="fade-up" data-aos-duration="1500" class="line"></div>
           </div>
         </div>
       </section>
@@ -69,11 +84,29 @@
           <div class="sectionTwo-container_One">
             <!-- <div class="sectionTwo-textImg"> -->
             <div class="bulb-img">
-              <img src="./img/Creative_1-removebg-preview.png" alt="bulb" />
+              <img
+                data-aos="fade-down"
+                data-aos-offset="200"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                src="./img/Creative_1-removebg-preview.png"
+                alt="bulb"
+              />
             </div>
 
             <div class="tech-container">
-              <h2>
+              <h2
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+              >
                 getlinked Tech Hackathon
                 <span>1.0</span>
                 <span class="chain-img">
@@ -107,7 +140,12 @@
 
             <div class="register-container">
               <div class="sectionTwo-text">
-                <p>
+                <p
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-out"
+                >
                   Participate in getlinked tech Hackathon 2023 stand a chance to
                   win a Big prize
                 </p>
@@ -130,6 +168,13 @@
             <div class="sectionTwo-images">
               <div class="man">
                 <img
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
                   src="./img/man-wearing-smart-glasses-touching-virtual-screen_1-removebg-preview.png"
                   alt="pic"
                 />
@@ -137,11 +182,25 @@
 
               <div class="spiral-lens">
                 <img
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
                   class="spiral"
                   src="./img/metrix_1-removebg-preview.png"
                   alt="pic"
                 />
                 <img
+                  data-aos="fade-up"
+                  data-aos-offset="200"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
                   class="lens"
                   src="./img/Image_1-removebg-preview.png"
                   alt="pic"
@@ -190,5 +249,34 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/time.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      // Initialize AOS
+      AOS.init();
+
+      // You can also pass an optional settings object
+      // below listed default settings
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
