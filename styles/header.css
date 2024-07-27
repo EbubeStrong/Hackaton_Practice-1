@@ -231,4 +231,7 @@ header{
     .dropdown-content{
       padding-left: 18%;
     }
+    .dropdown-content{
+      height: 70%;
+    }
 }
