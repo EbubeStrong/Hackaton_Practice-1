@@ -1,0 +1,24 @@
+.section-container-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.section-container-3 .image{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-container-3 .image .big_idea img{
+  width: 490px;
+  height: 477px;
+}
+
+.section-container-3 .text-container .text-content-1{
+    display: flex;
+    align-items: center;
+}
