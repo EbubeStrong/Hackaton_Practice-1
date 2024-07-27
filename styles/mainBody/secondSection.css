@@ -42,6 +42,7 @@
   left: 33%;
   width: 100%;
   max-width: 150px;
+  color: #fff;
 }
 
 .section-container-3 .idea-arrow_image .arrowImg {
@@ -72,6 +73,7 @@
   max-width: 400px;
   font-size: 32px;
   font-weight: 700;
+  color: #fff;
 }
 
 .section-container-3 .text-container .text-content-1 p span {
@@ -87,6 +89,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 27.5px;
+  color: #fff;
   /* text-align: left; */
 }
 
