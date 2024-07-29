@@ -270,6 +270,15 @@
   .section-container-4 .text-container .text-content-1{
     align-items: center;
   }
+
+  .section-container-4 .text-container .text-content-2 p{
+    text-align: center;
+    /* border: 2px solid red; */
+  }
+
+  .section-container-4 .text-container .text-content-2 .text_dropdown p{
+    text-align: left;
+  }
 }
 
 @media (max-width: 700px) {
@@ -305,7 +314,7 @@
     color: #fff;
     margin-top: 10px;
     padding: 0 5px;
-    /* text-align: center; */
+    /* text-align: justify; */
     /* text-align: left; */
   }
 /* End of 4th section I */
@@ -343,6 +352,6 @@
   .section-container-4 .text-container .text-content-1 p {
     max-width: 310px;
     /* font-size: 1px; */
-    white-space: nowrap;
+    /* white-space: nowrap; */
   }
 }
