@@ -1,0 +1,27 @@
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s ease-out, padding 1.2s ease-out;
+  /* margin-top: 10px; */
+  padding: 0;
+  background: linear-gradient(90deg, #903aff 0%, #fe34bbb0 100%);
+  color: #fff;
+  border: 1px solid #903aff;
+}
+
+.panel.show {
+  max-height: 500px; /* Adjust this value based on your content's height */
+  padding: 0;
+}
+
+.panel > p {
+  padding: 5px;
+  font-size: 22px;
+
+  /* padding-bottom: 5px; */
+  margin-top: 5px;
+}
+
+.panel.show > p {
+  padding-top: 0;
+}

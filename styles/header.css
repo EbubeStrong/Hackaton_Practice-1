@@ -136,7 +136,7 @@ header{
     width: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -0.2%;
     background-color: var(--dark-purple-color);
     box-shadow: -1px 0.7px 4px 3px var(--light-purple-color);
     overflow-x: hidden;
