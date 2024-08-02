@@ -21,11 +21,21 @@
   /* border: 2px solid red; */
 }
 
-.section-container-3 .idea-arrow_image {
+.section_II {
+  align-items: center;
+}
+
+.section_II .idea-arrow_image {
   display: flex;
-  flex-direction: column;
-  /* border: 2px solid green; */
+  align-items: center;
+  justify-content: center;
   position: relative;
+  width: 100%;
+}
+
+.section_II .idea-arrow_image .idea-arrow_image img {
+  width: 710px;
+  height: 587px;
 }
 
 .section-container-3 .idea-arrow_image .big_idea {
@@ -86,6 +96,11 @@
   color: var(--light-pink-color);
 }
 
+.section-container-3 .text-container .text-content-1 .text span {
+  color: var(--light-pink-color);
+  display: block;
+}
+
 .section-container-3 .text-container .text-content-1 img {
   margin-right: 3.5rem;
 }
@@ -97,6 +112,18 @@
   line-height: 27.5px;
   color: #fff;
   /* text-align: left; */
+}
+
+.section_II .text-container .text-content-2 p {
+  /* width: 533px;
+  height: 75px; */
+  /* font-family: Montserrat; */
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+.section_II .text-container .text-content-2 p span {
+  color: #ff26b9;
 }
 
 @media (max-width: 1015px) {
@@ -190,18 +217,37 @@
     text-align: center;
   }
 
+  .section-container-3 .text-container .text-content-1 {
+    justify-content: center;
+    gap: 0;
+    padding-left: 30px;
+  }
+
+  .section_II .text-container .text-content-1 {
+    padding-left: 0;
+  }
+
   .section-container-3 .text-container .text-content-1 p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 350px;
+    justify-content: center;
+    /* max-width: 650px; */
     font-size: 28px;
     padding: 10px;
-    /* border: 2px solid green; */
+    overflow: hidden;
+    /* text-align: center; */
   }
   .section-container-3 .text-container .text-content-1 p span {
     position: relative;
-    margin-right: 80px;
+    /* margin: 0 0 0 50px; */
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .section-container-3 .text-container .text-content-1 img {
+    width: 10px;
+    /* height: 77px; */
   }
 }
 
@@ -212,6 +258,12 @@
   }
   .section-container-3 .text-container .text-content-1 p span {
     margin-right: 3rem;
+  }
+  .section-container-3 .text-container .text-content-1 p span {
+    position: relative;
+    margin-right: 10px;
+    padding-left: 20px;
+    width: 100%;
   }
 }
 
@@ -225,6 +277,13 @@
   }
   .section-container-3 .text-container .text-content-1 p span {
     margin-right: 3rem;
+  }
+
+  .section-container-3 .text-container .text-content-1 p span {
+    position: relative;
+    margin-right: 10px;
+    padding-left: 10px;
+    width: 100%;
   }
 }
 
