@@ -22,7 +22,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 20px;
 }
 
-.section-one, .section-three, .section-four {
+.section-one, .section-three, .section-four, .section-five {
     width: 100%;
     background-color: var(--dark-purple-color);
     padding: 20px;
