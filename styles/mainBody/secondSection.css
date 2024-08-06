@@ -68,15 +68,9 @@
 }
 
 .section-container-3 .idea-arrow_image .arrowImg {
-  /* position: absolute; */
-  /* top: 66rem;
-  bottom: 0;
-  left: 30em; */
-  /* width: 49.43px; */
   position: relative;
   left: 20px;
   bottom: 7rem;
-  /* border: 2px solid red; */
   width: 100%;
   text-align: right;
   height: 57.97px;
@@ -84,7 +78,6 @@
 }
 
 .section-container-3 .text-container {
-  /* border: 2px solid black; */
   padding: 0 2rem;
 }
 
@@ -261,6 +254,16 @@
   .section-container-3 .text-container .text-content-1 img {
     width: 10px;
     /* height: 77px; */
+  }
+
+  .section-container-3 .idea-arrow_image .arrowImg {
+    position: relative;
+    left: 0;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    text-align: center;
+    height: 57.97px;
+    transform: rotate(2.92deg);
   }
 }
 
