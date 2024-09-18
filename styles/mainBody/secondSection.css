@@ -16,7 +16,7 @@
   justify-content: space-around;
   align-items: center;
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 25px;
   gap: 20px;
   /* padding: 0 50px; */
