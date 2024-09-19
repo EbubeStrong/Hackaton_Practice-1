@@ -4,6 +4,10 @@
   --light-pink-color: #d434fe;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 .header-section {
   background-color: var(--dark-purple-color);
@@ -12,7 +16,7 @@
   position: sticky;
   top: 0;
   box-shadow: 3px 2px 3px 2px var(--light-pink-color);
-  z-index: 1;
+  z-index: 999;
 }
 
 header{
@@ -136,9 +140,10 @@ header{
     width: 0;
     position: absolute;
     top: 0;
-    right: -0.2%;
+    /* right: -0.9%; */
+    right: 0;
     background-color: var(--dark-purple-color);
-    box-shadow: -1px 0.7px 4px 3px var(--light-purple-color);
+    /* box-shadow: -1px 0.7px 4px 3px var(--light-purple-color); */
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 1;

@@ -8,6 +8,7 @@
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid grey;
+  overflow: hidden;
   /* border: 2px solid blue; */
 }
 
@@ -29,12 +30,13 @@
 
 .section_II .idea-arrow_image {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   position: relative;
   width: 100%;
   /* border: 2px solid red; */
-  overflow: hidden;
+  /* overflow: hidden; */
+  padding: 5px;
   position: relative;
 }
 

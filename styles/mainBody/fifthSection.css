@@ -49,8 +49,9 @@
 .prizes {
   display: block;
   /* border: 2px solid red; */
-  height: 55vh;
-  overflow: hidden;
+  /* height: 65vh; */
+  height: 80%;
+  /* overflow: hidden; */
   position: relative;
 }
 
@@ -73,8 +74,7 @@
   /* border: 2px solid green; */
   position: relative;
   top: -50px;
-  height: 67vh;
-  overflow: hidden;
+  height: 105%;
 }
 
 .section-six .content-2 .text-content-1 h2 {
@@ -113,47 +113,53 @@
   color: #fff;
   background: #150e28;
   text-align: center;
-  padding: 80px 0 0 0;
-  position: absolute;
-  top: 36%;
+  padding: 80px 0 20px 0;
+  position: relative;
+  top: -20%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
+  height: 62%;
   pointer-events: none;
 }
 
 .prizes:nth-child(2) .prizes-text {
-  padding: 80px 0 0 0;
-  top: 55%;
+  position: relative;
+  padding: 50px 0 0 0;
+  top: -10%;
   width: 80%;
+  height: 40%;
   margin: 0 auto;
 }
 
 @media(max-width: 750px){
   .section-six {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* gap: 40px; */
   }
 
   .section-six .star{
     display: none;
   }
 
-  .content-1 .cup-image {
-  /* text-align: center;
+  .section-six .content-2 .text-content-1{
+  text-align: center;
+  position: absolute;
+  top: 0;
   width: 100%;
-  margin-top: 40px; */
-  /* position: relative; */
+}
+
+
+  .content-1 .cup-image {
   position: relative;
-  margin: 0;
-  /* top: 55%; */
+  margin: 0 auto;
+  width: 100%;
   padding-top: 9rem;
-  border: 2px solid blue;
+  /* border: 2px solid rgb(0, 255, 76); */
 }
 
 .cup-image img {
@@ -161,33 +167,47 @@
   max-width: 70%;
 }
 
-  .section-six .content-1 {
-  border: 2px solid green;
-  width: 100%;
-  padding: 0;
-}
   .section-six .content-2 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 100%;
-  padding: 0;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-six .content-2 .prizes-container {
-  display: flex;
-  border: 2px solid blue;
-  padding: 50px 15px 10px 15px;
-  position: relative;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-six .content-2 .text-content-1{
-  text-align: center;
-  position: absolute;
-  top: 0;
+.section-six .content-2 .prizes-container {
+  display: flex;
+  /* border: 2px solid rgb(0, 255, 13); */
+  padding: 50px 15px 1px 15px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  height: 100%;
+}
+
+.prizes {
+  display: block;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.prizes:nth-child(2) {
+  display: block;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.prizes .prizes-text {
+  border: 2px solid #d434fe;
+  margin-top: -4rem;
+  padding: 60px 0 40px 0;
+}
+
+.prizes:nth-child(2) .prizes-text{
+  margin-top: -3rem;
+  width: 70%;
+  padding: 60px 0 20px 0;
 }
 
 .section-six .content-2 .text-content-1 p{
@@ -196,4 +216,25 @@
   max-width: 300px;
 }
 
+}
+
+@media(max-width:600px){
+  .prizes .prizes-text {
+  margin-top: -2.5rem;
+}
+
+.prizes:nth-child(2) .prizes-text{
+  margin-top: -2rem;
+}
+}
+
+@media(max-width: 350px){
+  .prizes .prizes-text {
+  margin-top: -2rem;
+}
+
+.prizes:nth-child(2) .prizes-text{
+  margin-top: -1.5rem;
+  width: 100%;
+}
 }

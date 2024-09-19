@@ -7,6 +7,7 @@
 .section-four {
   width: 100%;
   padding: 40px 0 20px 0;
+  overflow: hidden;
   border-bottom: 1px solid grey;
 }
 
